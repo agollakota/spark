@@ -25,12 +25,19 @@ r"""
  and then run the example
     `$ bin/spark-submit examples/src/main/python/streaming/network_wordcount.py localhost 9999`
 """
-from __future__ import print_function
+from __future__ import print_function #helps code stay compatible with any new updates
 
-import sys
+import sys #This module provides access to some variables used or maintained by the interpreter 
+           #and to functions that interact strongly with the interpreter. It is always available.
 
-from pyspark import SparkContext
-from pyspark.streaming import StreamingContext
+from pyspark import SparkContext #Spark context sets up internal services and establishes a connection to a 
+                                 #Spark execution environment.
+                                 #Once a SparkContext is created you can use it to create RDDs, accumulators 
+                                 #and broadcast variables, access Spark services and run jobs (until SparkContext is stopped).
+
+   
+from pyspark.streaming import StreamingContext #Main entry point for Spark Streaming functionality. It provides methods used to 
+                                                #create org.apache.spark.streaming.dstream.DStreams from various input sources.
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
