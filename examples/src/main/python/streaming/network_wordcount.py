@@ -15,16 +15,16 @@
 # limitations under the License.
 #
 
-r"""
- Counts words in UTF8 encoded, '\n' delimited text received from the network every second.
- Usage: network_wordcount.py <hostname> <port>
-   <hostname> and <port> describe the TCP server that Spark Streaming would connect to receive data.
 
- To run this on your local machine, you need to first run a Netcat server
-    `$ nc -l 2399`
- and then run the example
-    `$ bin/spark-submit examples/src/main/python/streaming/network_wordcount.py localhost 2399`
-"""
+# Counts words in UTF8 encoded, '\n' delimited text received from the network every second.
+# Usage: network_wordcount.py <hostname> <port>
+#   <hostname> and <port> describe the TCP server that Spark Streaming would connect to receive data.
+
+# To run this on your local machine, you need to first run a Netcat server
+#    `$ nc -l 2399`
+#  and then run the example
+#    `$ bin/spark-submit examples/src/main/python/streaming/network_wordcount.py localhost 2399`
+
 from __future__ import print_function #helps code stay compatible with any new updates
 
 import sys #This module provides access to some variables used or maintained by the interpreter 
