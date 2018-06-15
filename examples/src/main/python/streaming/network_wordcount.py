@@ -46,4 +46,4 @@ if __name__ == "__main__":
     counts.pprint()
 
     ssc.start()
-    ssc.awaitTermination(5)
+    ssc.awaitTermination(30)
